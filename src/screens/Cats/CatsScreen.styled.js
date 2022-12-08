@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Main = styled.main`
     display: flex;
     justify-content: center;
-    height: 89vh;
+    max-width: 1200px;
+    margin: 0 auto;
     
 
 
@@ -11,7 +12,6 @@ export const Main = styled.main`
 
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         width: 60vw;
         gap: 20px;
 
@@ -27,6 +27,7 @@ export const Main = styled.main`
             background-size: cover;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            height: 150px;
             
         }
 

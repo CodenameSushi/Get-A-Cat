@@ -1,6 +1,7 @@
 import React from 'react'
 import { Main } from './CartScreen.styled'
 import CatCard from '../../components/CatCard/CatCard'
+import Filter from '../../components/Filter/Filter'
 
 const CartScreen = (props) => {
 
@@ -15,8 +16,7 @@ const CartScreen = (props) => {
 
 
   return (
-
-
+    <>
     <Main>
     <section>
         <h1>Cats to take home</h1>
@@ -35,6 +35,7 @@ const CartScreen = (props) => {
         }
     </section>
 </Main>
+</>
   )
 }
 

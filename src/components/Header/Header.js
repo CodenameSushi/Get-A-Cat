@@ -5,13 +5,15 @@ import Logo from '../../assets/cat-logo.png'
 
 const Header = (props) => {
 
+
   const {
     goToCartScreen,
     goToCatsScreen,
     filterText,
     onChangeFilterText,
-    itemsInCart
+    cart
   } = props
+
 
   return (
     <HeaderContainer>
@@ -36,8 +38,9 @@ const Header = (props) => {
         <button className="cart-button" onClick={goToCartScreen}>
           <img className="cart-image" src={CartIcon} alt="cart icon"/>
           {
-            itemsInCart > 0
-            && <span className="cart-badge">{itemsInCart}</span>
+            cart.length > 0
+             && 
+            <span className="cart-badge">{cart.length}</span>
           }
         </button>
       </div>

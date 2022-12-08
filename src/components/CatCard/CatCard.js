@@ -29,14 +29,14 @@ const {
 
         <div className='card-age-and-action'>
 
-            <span>Age: {cat.age}</span>
+            <span>Age: {cat.age} years</span>
 
             {isOnCartScreen && cat.quantity > 1 && (
                 <button onClick={() => decreaseQuantityInCart(cat)}>-</button>
             )}
 
             {isOnCatsScreen && (
-                <button onClick={() => addToCart(cat)}>Adopt Cat!</button>
+                <button onClick={() => addToCart(cat)}>ADOPT</button>
             )}
 
             {isOnCartScreen && <span>x{cat.quantity}</span>}
@@ -75,3 +75,5 @@ const {
 }
 
 export default CatCard
+
+

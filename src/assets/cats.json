@@ -1,82 +1,96 @@
 
 [
     {
-        "id": 1,
+        
         "breed": "Munchkin",
-        "age": "1y",
+        "age": "1 Year",
         "gender": "Male",
         "imageUrl": "https://images.pexels.com/photos/2286016/pexels-photo-2286016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "imageAlt": "Munchkin Cat"
+        "imageAlt": "Munchkin Cat",
+        "id": 1
 
     },
     
     {
-        "id": 2,
-        "breed": "Munchkin",
-        "age": 1,
-        "gender": "Male",
-        "imageUrl": "https://images.pexels.com/photos/2286016/pexels-photo-2286016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "imageAlt": "Munchkin Cat"
+        
+        "breed": "Siamese",
+        "age": 2.4,
+        "gender": "Female",
+        "imageUrl": "https://cdn.pixabay.com/photo/2017/05/17/22/02/siam-2321938_960_720.jpg",
+        "imageAlt": "Siamese Cat",
+        "id": 2
 
     },
 
     {
-        "id": 3,
-        "breed": "Munchkin",
-        "age": 1,
+        
+        "breed": "Chartreux",
+        "age": 0.7,
         "gender": "Male",
-        "imageUrl": "https://images.pexels.com/photos/2286016/pexels-photo-2286016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "imageAlt": "Munchkin Cat"
+        "imageUrl": "https://cdn.pixabay.com/photo/2018/02/09/20/22/chartreux-3142342_960_720.jpg",
+        "imageAlt": "Chartreux Cat",
+        "id": 3
 
     },
 
     {
-        "id": 4,
-        "breed": "Munchkin",
-        "age": 1,
+        
+        "breed": "Ragdoll",
+        "age": 4,
+        "gender": "Female",
+        "imageUrl": "https://images.pexels.com/photos/7106228/pexels-photo-7106228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "imageAlt": "Ragdoll Cat",
+        "id": 4
+        
+    },
+
+    {
+        "breed": "Maine Coon",
+        "age": 0.5,
         "gender": "Male",
-        "imageUrl": "https://images.pexels.com/photos/2286016/pexels-photo-2286016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "imageAlt": "Munchkin Cat"
+        "imageUrl": "https://images.pexels.com/photos/7516115/pexels-photo-7516115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "imageAlt": "Maine Coon Cat",
+        "id": 5
 
     },
 
     {
-        "id": 5,
-        "breed": "Munchkin",
-        "age": 1,
+        "breed": "Devon Rex",
+        "age": 3,
         "gender": "Male",
-        "imageUrl": "https://images.pexels.com/photos/2286016/pexels-photo-2286016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "imageAlt": "Munchkin Cat"
+        "imageUrl": "https://cdn.pixabay.com/photo/2022/08/19/13/30/devon-rex-7396932_960_720.jpg",
+        "imageAlt": "Devon Rex Cat",
+        "id": 6
 
     },
 
     {
-        "id": 6,
-        "breed": "Munchkin",
-        "age": 1,
+        "breed": "Scottish Fold",
+        "age": 0.3,
         "gender": "Male",
-        "imageUrl": "https://images.pexels.com/photos/2286016/pexels-photo-2286016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "imageAlt": "Munchkin Cat"
+        "imageUrl": "https://cdn.pixabay.com/photo/2019/12/27/15/39/cat-4722697_960_720.jpg",
+        "imageAlt": "Scottish Cat",
+        "id": 7
 
     },
 
     {
-        "id": 7,
-        "breed": "Munchkin",
-        "age": 1,
-        "gender": "Male",
-        "imageUrl": "https://images.pexels.com/photos/2286016/pexels-photo-2286016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "imageAlt": "Munchkin Cat"
+        "breed": "Bengal",
+        "age": 10,
+        "gender": "Female",
+        "imageUrl": "https://images.pexels.com/photos/11940865/pexels-photo-11940865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "imageAlt": "Bengal Cat",
+        "id": 8
 
     },
 
     {
-        "id": 8,
-        "breed": "Munchkin",
-        "age": 1,
+        "breed": "Bengal",
+        "age": 0.1,
         "gender": "Male",
-        "imageUrl": "https://images.pexels.com/photos/2286016/pexels-photo-2286016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "imageAlt": "Munchkin Cat"
+        "imageUrl": "https://cdn.pixabay.com/photo/2018/05/26/15/21/cat-3431526_960_720.jpg",
+        "imageAlt": "Bengal Cat",
+        "id": 9
 
     }
 
