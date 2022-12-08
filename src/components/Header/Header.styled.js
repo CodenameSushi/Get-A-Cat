@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
     height: 6vh;
     background-color: #E8AA42;
     padding: 12px;
+    border-radius: 0 0 10px 10px;
 
     a {
         text-decoration: none;
@@ -63,13 +64,15 @@ export const HeaderContainer = styled.header`
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 10%;
-        right: 10%;
+        top: 1px;
+        right: 1px;
         margin-left:4px;
         width: 18px;
         height: 18px;
         border-radius: 50%;
-        background-color: white;
+        background-color: #00303F;
+        font-weight: bold;
+        color: white;
 
     }
 

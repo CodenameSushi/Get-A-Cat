@@ -6,11 +6,13 @@ import { useState } from "react";
 
 function App() {
 
-    const [activeScreen, setActiveScreen] = useState("CatsScreen")
-
-    const [cart, setCart] = useState([])
-
+    const [ activeScreen, setActiveScreen ] = useState("CatsScreen")
+    const [ cart, setCart ] = useState([])
     const [ filterText, setFilterText ] = useState("")
+    const [ orderFilter, setOrderFilter] = useState("a-z")
+    const [ genderFilter, setGenderFilter ] = useState("all")
+    const [ maxAge, setMaxAge ] = useState(Infinity)
+    const [ minAge, setMinAge ] = useState(-Infinity)
 
     const goToCatsScreen = () => setActiveScreen("CatsScreen")
 
@@ -71,7 +73,15 @@ function App() {
         case "CatsScreen":
           return <CatsScreen
           addToCart={addToCart}
-          filterText={filterText}/>
+          filterText={filterText}
+          maxAge={maxAge}
+          setMaxAge={setMaxAge}
+          minAge={minAge}
+          setMinAge={setMinAge}
+          genderFilter={genderFilter}
+          setGenderFilter={setGenderFilter}
+          orderFilter={orderFilter}
+          setOrderFilter={setOrderFilter}/>
         case "CartScreen":
           return <CartScreen
           cart={cart}
@@ -85,12 +95,15 @@ function App() {
     };
 
 
+
+
+
   return (
     <>
     <Header
     goToCatsScreen={goToCatsScreen}
     goToCartScreen={goToCartScreen}
-    itemsInCart={cart.lenght}
+    cart={cart}
     filterText={filterText}
     onChangeFilterText={onChangeFilterText}
     />

@@ -10,10 +10,12 @@ export const GlobalStyle = createGlobalStyle`
 
     html{
         font-family:sans-serif;
+        background-color: #C1D9D0;
     }
 
     #root {
         background-color: #C1D9D0;
+        margin: 0 auto;
     }
 
 `
