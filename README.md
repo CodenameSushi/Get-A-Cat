@@ -21,6 +21,7 @@ Get A Cat foi destinado ao amantes de gatos!
 Aqui voce pode mostrar seu amor aos gatinhos indefesos e abandonados :'(
 
 - Homepage com a lista de gatinhos renderizada com map e filtrada com filter, onde voce pode escolher seu gatinho preferido e adiciona-lo ao "Carrinho de gatinhos"!
+- Filter fixado na lateral, onde voce pode filtrar por Breed, Age e ordem alfabetica.
 - Carrinho com funcao de Toggle, onde voce pode clicar no mesmo para abrir e visualizar seus gatinhos, e clicar novamente para fecha-lo!
 - About Page monstrando nossa paixao!
 - Headear com direcionamento de paginas e buscar por nome!
