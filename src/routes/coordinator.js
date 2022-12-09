@@ -4,3 +4,6 @@ export const goToCatsScreen = (navigate) => {
 export const goToCartScreen = (navigate) => {
     navigate("/cart")
 }
+export const goToAboutPage = (navigate) => {
+    navigate("/about")
+}

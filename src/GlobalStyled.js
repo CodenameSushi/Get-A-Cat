@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     #root {
         background-color: #C1D9D0;
         margin: 0 auto;
+        max-height: 100vh;
     }
 
 `

@@ -5,7 +5,7 @@ import Logo from '../../assets/cat-logo.png'
 import { useContext } from "react";
 import { GlobalContext } from "../../contexts/GlobalContext";
 import { useNavigate } from "react-router-dom";
-import { goToCatsScreen, goToCartScreen } from "../../routes/coordinator";
+import { goToCatsScreen, goToAboutPage} from "../../routes/coordinator";
 
 const Header = () => {
   const context = useContext(GlobalContext)
@@ -32,7 +32,7 @@ const Header = () => {
 
       <div className="logo-container" onClick={() => goToCatsScreen(navigate)}><a href="#"><img className="logo-image" src={Logo} alt="logo"/></a></div>
 
-      <a className="link-about" href="#">
+      <a className="link-about" href="#" onClick={() => goToAboutPage(navigate)}>
         <p>About</p>
       </a>
       

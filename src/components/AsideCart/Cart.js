@@ -3,7 +3,8 @@ import { useContext } from "react";
 import { GlobalContext } from "../../contexts/GlobalContext";
 import { CartContainer } from "./Cart.styled";
 import { CartCard } from "./Cart.styled";
-import { ScaleFade } from '@chakra-ui/react'
+import { ScaleFade, Button, ButtonGroup } from '@chakra-ui/react'
+
 
 const Cart = () => {
   const context = useContext(GlobalContext);
@@ -23,6 +24,7 @@ const Cart = () => {
 
       {cart.map((cat) => (
         <>
+        <hr />
           <CartCard>
             {" "}
             <div className="img-header">
@@ -45,9 +47,12 @@ const Cart = () => {
               x
             </button>
           </CartCard>
-          <hr />
+          
         </>
       ))}
+      <Button colorScheme='teal' variant='outline' color={'#06343B'}>
+    Confirm Selection
+  </Button>
     </CartContainer>
     </ScaleFade>
   );

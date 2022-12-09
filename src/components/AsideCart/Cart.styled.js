@@ -12,6 +12,7 @@ flex-direction: column;
  margin-top: 32px;
  border-radius: 8px 0 0 8px;
  background-color: #E8AA42;
+ overflow: hidden;
 
  h2 {
     font-weight: bold;
@@ -26,7 +27,6 @@ export const CartCard = styled.article`
 display: flex;
 justify-content: space-between;
 align-items: center;
-
 background-color: #06343B;
 color: #C1D9D0;
 padding: 8px;
