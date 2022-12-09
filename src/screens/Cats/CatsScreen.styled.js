@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const Main = styled.main`
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     max-width: 1200px;
+    min-height: 86vh;
     margin: 0 auto;
     
 

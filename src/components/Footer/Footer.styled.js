@@ -10,6 +10,7 @@ export const FooterContainer = styled.footer`
     font-size: larger;
     align-items: center;
     padding: 4px;
+    height: 6vh;
 
     div{
         display: flex;
