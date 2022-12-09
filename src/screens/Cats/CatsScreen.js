@@ -18,17 +18,6 @@ const CatsScreen = (props) => {
     setOrderFilter,
   } = props;
 
-  const filterCatsByText = () => {
-    return cats.filter((cat) =>
-      cat.breed.toLowerCase().includes(filterText.toLowerCase())
-    );
-  };
-
-  const filterCatsByGender = () => {
-    return cats.filter((cat) =>
-      cat.gender.toLowerCase().includes(genderFilter.toLowerCase())
-    );
-  };
 
   return (
     <>
@@ -53,7 +42,7 @@ const CatsScreen = (props) => {
             .filter((cat) => {
               if (cat.gender.toLowerCase() === genderFilter.toLowerCase() && genderFilter !== "All"){
                 return cat
-            }else if (genderFilter === "all" && cat.gender.toLowerCase() != genderFilter.toLowerCase()){
+            }else if (genderFilter === "all" && cat.gender.toLowerCase() !== genderFilter.toLowerCase()){
                 return cat
             }
               })

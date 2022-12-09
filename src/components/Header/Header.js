@@ -14,7 +14,6 @@ const Header = (props) => {
     cart
   } = props
 
-
   return (
     <HeaderContainer>
       <input

@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 6vh;
+    height: 8vh;
     background-color: #E8AA42;
     padding: 12px;
     border-radius: 0 0 10px 10px;
@@ -14,6 +14,9 @@ export const HeaderContainer = styled.header`
         color: #00303F;
         font-weight: bold;
         font-size: 20px;
+        :hover{
+            cursor: pointer;
+        }
     }
 
     input{
@@ -25,7 +28,7 @@ export const HeaderContainer = styled.header`
     }
 
     p {
-        width: 50px;
+        width: 60px;
     }
 
 

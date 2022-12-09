@@ -1,7 +1,7 @@
 import React from 'react'
 import { Main } from './CartScreen.styled'
 import CatCard from '../../components/CatCard/CatCard'
-import Filter from '../../components/Filter/Filter'
+import Header from '../../components/Header/Header'
 
 const CartScreen = (props) => {
 
