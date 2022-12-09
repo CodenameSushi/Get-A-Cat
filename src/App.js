@@ -8,17 +8,15 @@ import { useEffect, useState } from 'react'
 const App = () => {
 
   
-  const [ activeScreen, setActiveScreen ] = useState(1)
   const [ cart, setCart ] = useState([])
   const [ filterText, setFilterText ] = useState("")
   const [ orderFilter, setOrderFilter] = useState("a-z")
   const [ genderFilter, setGenderFilter ] = useState("all")
   const [ maxAge, setMaxAge ] = useState(Infinity)
   const [ minAge, setMinAge ] = useState(-Infinity)
+  const [ toggleCart, setToggleCart ] = useState(false)
 
-  const goToCatsScreen = () => setActiveScreen("CatsScreen")
 
-  const goToCartScreen = () => setActiveScreen("CartScreen")
 
   const addToCart = (catToAdd) => {
     const newCart = [...cart]
@@ -84,23 +82,16 @@ const App = () => {
       
   }
 
-  const switchScreenToCats = () => {
-    setActiveScreen(1)
+  const toggle = () => {
+    setToggleCart(!toggleCart)
   }
 
-  const switchScreenToCart = () => {
-    setActiveScreen(2)
-  }
-
-  console.log(cart)
 
   useEffect(() => {
       reloadCart()
   }, [])
   
   const context = {
-    activeScreen,
-    setActiveScreen,
     addToCart,
     filterText,
     setFilterText,
@@ -118,11 +109,10 @@ const App = () => {
     increaseQuantityInCart,
     decreaseQuantityInCart,
     deleteFromCart,
-    goToCartScreen,
-    goToCatsScreen,
     reloadCart,
-    switchScreenToCats,
-    switchScreenToCart
+    toggle,
+    toggleCart,
+    setToggleCart
   }
 
 

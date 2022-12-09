@@ -13,6 +13,12 @@ export const CatCardContainer = styled.article`
 
     overflow: hidden;
     position: relative;
+    opacity: 0.9;
+    :hover
+{
+        opacity:1;
+}
+
 
     > div {
         padding: 8px;

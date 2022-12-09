@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const Main = styled.main`
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     max-width: 1200px;
+    min-height: 86vh;
     margin: 0 auto;
     
 
@@ -23,11 +25,13 @@ export const Main = styled.main`
             margin-top: 80px;
             font-size: 72px;
             text-align: center;
-            background-image: url("https://media.giphy.com/media/hRnLeHfJ64EXS/giphy.gif");
+            /* background-image: url("https://media.giphy.com/media/hRnLeHfJ64EXS/giphy.gif");
             background-size: cover;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent; */
             height: 150px;
+            color: #06343B;
+            font-weight: medium;
             
         }
 

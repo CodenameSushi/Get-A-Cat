@@ -15,7 +15,8 @@ const Header = () => {
   const {
     filterText,
     onChangeFilterText,
-    cart
+    cart,
+    toggle
   } = context
 
   return (
@@ -29,7 +30,7 @@ const Header = () => {
         <p>Home</p>
       </a>
 
-      <div className="logo-container"><a href="#"><img className="logo-image" src={Logo} alt="logo"/></a></div>
+      <div className="logo-container" onClick={() => goToCatsScreen(navigate)}><a href="#"><img className="logo-image" src={Logo} alt="logo"/></a></div>
 
       <a className="link-about" href="#">
         <p>About</p>
@@ -38,7 +39,7 @@ const Header = () => {
 
 
       <div className="cart-container">
-        <button className="cart-button" onClick={() => goToCartScreen(navigate)}>
+        <button className="cart-button" onClick={() => toggle()}>
           <img className="cart-image" src={CartIcon} alt="cart icon"/>
           {
             cart.length > 0

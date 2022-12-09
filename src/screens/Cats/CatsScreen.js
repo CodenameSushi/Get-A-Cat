@@ -1,8 +1,10 @@
 import React from "react";
 import { useContext } from "react";
 import cats from "../../assets/cats.json";
+import Cart from "../../components/AsideCart/Cart";
 import CatCard from "../../components/CatCard/CatCard";
 import Filter from "../../components/Filter/Filter";
+import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import { GlobalContext } from "../../contexts/GlobalContext";
 import { Main } from "./CatsScreen.styled";
@@ -16,6 +18,7 @@ const CatsScreen = () => {
     minAge,
     genderFilter,
     orderFilter,
+    toggleCart,
   } = context;
 
 
@@ -23,9 +26,10 @@ const CatsScreen = () => {
     <>
       <Header />
       <Filter/>
+      {toggleCart && (<Cart/>)}
       <Main>
         <section>
-          <h1>Available Cats for Adoption</h1>
+          <h1>Available Cats </h1>
           <hr />
           {cats
             .filter((cat) =>
@@ -56,6 +60,7 @@ const CatsScreen = () => {
             ))}
         </section>
       </Main>
+      <Footer/>
     </>
   );
 };
