@@ -1,17 +1,20 @@
 import React from 'react'
+import { useContext } from 'react'
+import { GlobalContext } from '../../contexts/GlobalContext'
 import { CatCardContainer } from './CatCard.styled'
 
 const CatCard = (props) => {
 
+    const context = useContext(GlobalContext)
+
+    const {cat, isOnCartScreen, isOnCatsScreen} = props
+
 const {
-    cat,
     addToCart,
-    isOnCartScreen,
-    isOnCatsScreen,
     decreaseQuantityInCart,
     increaseQuantityInCart,
     deleteFromCart
-} = props
+} = context
 
 
 
