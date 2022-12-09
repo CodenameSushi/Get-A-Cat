@@ -3,7 +3,7 @@
     {
         
         "breed": "Munchkin",
-        "age": "1 Year",
+        "age": 1,
         "gender": "Male",
         "imageUrl": "https://images.pexels.com/photos/2286016/pexels-photo-2286016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imageAlt": "Munchkin Cat",

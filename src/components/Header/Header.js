@@ -2,18 +2,21 @@ import React from "react";
 import { HeaderContainer } from "./Header.styled";
 import CartIcon from '../../assets/cart.png'
 import Logo from '../../assets/cat-logo.png'
+import { useContext } from "react";
+import { GlobalContext } from "../../contexts/GlobalContext";
+import { useNavigate } from "react-router-dom";
+import { goToCatsScreen, goToCartScreen } from "../../routes/coordinator";
 
-const Header = (props) => {
+const Header = () => {
+  const context = useContext(GlobalContext)
+  const navigate = useNavigate()
 
 
   const {
-    goToCartScreen,
-    goToCatsScreen,
     filterText,
     onChangeFilterText,
     cart
-  } = props
-
+  } = context
 
   return (
     <HeaderContainer>
@@ -22,7 +25,7 @@ const Header = (props) => {
       value={filterText}
       onChange={onChangeFilterText}
       />
-      <a className="link-home" href="#" onClick={goToCatsScreen}>
+      <a className="link-home" href="#" onClick={() => goToCatsScreen(navigate)}>
         <p>Home</p>
       </a>
 
@@ -35,7 +38,7 @@ const Header = (props) => {
 
 
       <div className="cart-container">
-        <button className="cart-button" onClick={goToCartScreen}>
+        <button className="cart-button" onClick={() => goToCartScreen(navigate)}>
           <img className="cart-image" src={CartIcon} alt="cart icon"/>
           {
             cart.length > 0

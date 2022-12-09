@@ -1,22 +1,24 @@
 import React from 'react'
 import { Main } from './CartScreen.styled'
 import CatCard from '../../components/CatCard/CatCard'
-import Filter from '../../components/Filter/Filter'
+import { useContext } from 'react'
+import { GlobalContext } from '../../contexts/GlobalContext'
+import Header from '../../components/Header/Header'
 
-const CartScreen = (props) => {
+const CartScreen = () => {
+
+  const context = useContext(GlobalContext)
 
     const {
-        cart,
-        increaseQuantityInCart, 
-        decreaseQuantityInCart,
-        deleteFromCart
-    }= props
+        cart
+    }= context
 
 
 
 
   return (
     <>
+    <Header/>
     <Main>
     <section>
         <h1>Cats to take home</h1>
@@ -27,9 +29,6 @@ const CartScreen = (props) => {
                 cat={cat} 
                 key={cat.id}
                 isOnCartScreen={true}
-                increaseQuantityInCart={increaseQuantityInCart}
-                decreaseQuantityInCart={decreaseQuantityInCart}
-                deleteFromCart={deleteFromCart}
                  />
         ))
         }

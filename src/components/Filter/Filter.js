@@ -1,7 +1,10 @@
 import React from "react";
+import { useContext } from "react";
+import { GlobalContext } from "../../contexts/GlobalContext";
 import { FilterContainer } from "./Filter.styled";
 
-const Filter = (props) => {
+const Filter = () => {
+    const context = useContext(GlobalContext)
   const {
     maxAge,
     setMaxAge,
@@ -11,7 +14,7 @@ const Filter = (props) => {
     setGenderFilter,
     orderFilter,
     setOrderFilter,
-  } = props;
+  } = context;
 
   return (
     <FilterContainer>
