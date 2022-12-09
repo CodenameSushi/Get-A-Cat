@@ -7,19 +7,16 @@ const CatCard = (props) => {
 
     const context = useContext(GlobalContext)
 
-    const {cat, isOnCartScreen, isOnCatsScreen} = props
+    const {cat} = props
 
 const {
     addToCart,
-    decreaseQuantityInCart,
-    increaseQuantityInCart,
-    deleteFromCart
+    reloadCart,
 } = context
 
 
 
   return (
-
     <CatCardContainer>
 
     <img src={cat.imageUrl} alt={cat.imageAlt}/>
@@ -34,28 +31,9 @@ const {
 
             <span>Age: {cat.age} years</span>
 
-            {isOnCartScreen && cat.quantity > 1 && (
-                <button onClick={() => decreaseQuantityInCart(cat)}>-</button>
-            )}
 
-            {isOnCatsScreen && (
                 <button onClick={() => addToCart(cat)}>ADOPT</button>
-            )}
 
-            {isOnCartScreen && <span>x{cat.quantity}</span>}
-
-            {isOnCartScreen && (
-                <button onClick={() => increaseQuantityInCart(cat)}>+</button>
-            )}
-
-            {isOnCartScreen
-            && <button 
-            className="cart-card-delete"
-            onClick={() => deleteFromCart(cat)}
-            >
-            x
-            </button>
-             }
 
             
 
@@ -71,6 +49,7 @@ const {
 
 
     </CatCardContainer>
+
 
 
 
